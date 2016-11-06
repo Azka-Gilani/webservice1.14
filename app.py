@@ -85,30 +85,6 @@ def processLatestProperties(req):
     latest = parameters.get("LatestProperties")
     return latest
 
-def processUnit(req):
-    result = req.get("result")
-    parameters = result.get("parameters")
-    unit = parameters.get("Unit")
-    return unit
-
-def processArea(req):
-    result = req.get("result")
-    parameters = result.get("parameters")
-    area = parameters.get("AreaNumber")
-    return area
-
-def processDate(req):
-    result = req.get("result")
-    parameters = result.get("parameters")
-    days = parameters.get("NoOfDays")
-    return days
-
-def processDateUnit(req):
-    result = req.get("result")
-    parameters = result.get("parameters")
-    dayUnit = parameters.get("DayUnit")
-    return dayUnit
-
 def makeWebhookResult(data):
     row1_id=data[0]['p_id']
     row1_title = data[0]['title']
