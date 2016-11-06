@@ -35,8 +35,6 @@ def processRequest(req):
     city_names=processlocation(req)
     sector_names=processSector(req)
     property_type=processPropertyType(req)
-    unit_property=processUnit(req)
-    area_property=processArea(req)
     NoOfDays=processDate(req)
     DateUnit=processDateUnit(req)
     minimum_value=processMinimum(req)
